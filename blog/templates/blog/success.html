@@ -1,0 +1,27 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+
+<div class="container ">
+        <div class="row">
+            <div class="col-sm-6 mx-auto" style="margin-top: 70px">
+                
+                   
+                     
+                    <div class="alert alert-success">
+                        succcessfully the ticket is cancelled u money wiil be refund with in three or 4 days 
+                        <h3>
+                            thank u {{user}} for chossing bus nest
+                        </h3>
+                        <div style="color:blueviolet">
+                            to continue the bus bookin click on home button
+                        </div>
+                        <button type="Submit" class="btn btn-success float-right mt-5"><a href="{% url 'home' %}" style="color: white;">  home</a></button>
+                        
+
+
+                
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

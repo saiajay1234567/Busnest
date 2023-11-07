@@ -1,0 +1,15 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    {% for post in posts %}
+        <article class="media content-section container border border-dark mb-5">
+          <img class="image mr-5" src="{{ post.user_name.profile.image.url }}">
+          <div class="media-body">
+            <div class="article-metadata" style="color: rgb(41, 213, 11);font-size: 45px;">
+              <div class="mr-2 mu-5" >{{ post.user_name }}</div>
+              <small class="text-muted">{{ post.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <p class="article-content " style="color: rgb(45, 45, 169);">{{ post.content }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
